@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#Store">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Xiaomi_logo_%282021-%29.svg/1024px-Xiaomi_logo_%282021-%29.svg.png" alt="" width="50px" height="50px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a id="link" class="nav-link active" aria-current="page" href="#">Store</a>
+              </li>
+              <!-- -------------------------------------------- -->
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Phone
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                  <li><a class="dropdown-item" href="#">redmi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  TV & Smart Phone
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">TV</a></li>
+                  <li><a class="dropdown-item" href="#">Smart TV</a></li>
+                </ul>
+              </li> 
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Laptop & Tablet
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Tablets</a></li>
+                  <li><a class="dropdown-item" href="#">redmi</a></li>
+                </ul>
+              </li>      
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Lifestyle
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                  <li><a class="dropdown-item" href="#">redmi</a></li>
+                </ul>
+              </li>                      
+              <li class="nav-item">
+                <a id="link" class="nav-link active" aria-current="page" href="#">Discover</a>
+              </li>
+              <li class="nav-item">
+                <a id="link" class="nav-link active" aria-current="page" href="#">Support</a>
+              </li>
+            </ul>
+           <div  class="icon">
+                <i class="fa-solid  fa-magnifying-glass fa-2x"></i>
+                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                <i class="fa-solid fa-user fa-2x"></i>
+           </div>
+          </div>
+        </div>
+      </nav>
+
+      <section id="slide">
+       <script>
+         i = 0
+         images = [];
+        var time = 5000;
+        //image list
+        images[0] = 'https://i03.appmifile.com/794_operator_in/11/01/2024/f43a3cd2ee11957d7e4ccd3cbdcdf888.jpg';
+        images[1] = 'https://i03.appmifile.com/650_operator_in/19/01/2024/9b2143ffd6570d4911e4097f32dde853.jpg?f=webp';
+        images[2] = 'https://i03.appmifile.com/528_operator_in/19/01/2024/dabe73770a008752974a9d1fc5fcfcba.jpg?f=webp';
+
+        function changeImg(){
+          document.slide.src = images[i];
+             if(i<images.length-1){
+              i++;
+
+             }
+             else{
+              i=0;
+             }
+
+             setTimeout("changeImg()",time)
+        }
+        window.onload = changeImg;
+       </script>
+       <img name="slide" width="100%" height="100%">
+      </section>
+      <!-- ----------------------------------------------------------------------- -->
+      <div class="container-fluid">
+        <div class="row">
+           <div class="col-lg-3 col-md-6 col-sm-12">
+               <div class="card">
+                   <img src="https://i03.appmifile.com/364_operator_in/04/01/2024/64660f723a5f433d2b2b05fadbfe4384.jpg?f=webp&thumb=1&q=85" class="card-img-top" alt="image"   height="400px" width="400px">
+                   <div class="card-body">
+                   </div>
+                 </div>
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12">
+               <div class="card">
+                   <img src="https://i03.appmifile.com/752_operator_in/16/02/2023/9ba4de496b2585d836d867ae79b6d8f0.jpg?f=webp" class="card-img-top" alt="image" height="400px" width="400px">
+                   <div class="card-body">
+                   </div>
+                 </div>
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12">
+               <div class="card">
+                   <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1681292640.42658518!600x600!85.jpg" class="card-img-top" alt="image" height="400px" width="400px">
+                   <div class="card-body">
+                   </div>
+                 </div>
+           </div>
+             <!-- <div class="container-fluid">
+                 <div class="division">
+                <div class="text">
+                  <h1>XIAOMI CARE</h1>
+                <div class="image">
+                  <img src="https://i03.appmifile.com/48_operator_in/17/11/2022/786ada679e2e325724eabe2876999875!96x96.png">
+                  <a  style="color: black;" href="">Mi Extended Warranty</a>
+                  <img src="https://i03.appmifile.com/314_operator_in/17/11/2022/f9e475a37bff4b308e265881090a50ab!96x96.png">
+                  <a style="color: black;" href="">Mi Screen Protect</a>
+                  <img src="https://i03.appmifile.com/101_operator_in/17/11/2022/0f88264f22456edc80f4ddbbab017d9a!96x96.png">
+                  <a style="color: black;" href="">Mi Complete Protect</a>
+              </div>  
+             </div> 
+            </div>
+  
+              <div class="division">
+                <div class="text"><h1>Service Centres</h1>
+                <a style="color: black;" href="">We'll guide you to the best solution</a></div>
+  </div>
+  </div> -->
+  <div class="div">
+    <div class="subdiv">
+      <div class="main-text">
+        <h1>XIAOMI CARE</h1>
+      </div>
+      <div class="image">
+        <img src="https://i03.appmifile.com/48_operator_in/17/11/2022/786ada679e2e325724eabe2876999875!96x96.png"><br>
+        <a  style="color: black;" href="">Mi Extended Warranty</a>
+      </div>
+      <div class="image">
+        <img src="https://i03.appmifile.com/314_operator_in/17/11/2022/f9e475a37bff4b308e265881090a50ab!96x96.png"><br>
+        <a  style="color: black;" href="">Mi Screen Protect</a>
+      </div>
+      <div class="image">
+        <img src="https://i03.appmifile.com/101_operator_in/17/11/2022/0f88264f22456edc80f4ddbbab017d9a!96x96.png"><br>
+        <a  style="color: black;" href="">Mi Complete Protect</a>
+      </div>
+    </div>
+  </div>
+  <section class="contact-us">
+    <div class="heading">
+      <h2>Support</h2>
+      <p>Online Help</p>
+      <p>Customer Service</p>
+      <p>Shipping FAQ</p>
+      <p>Warranty</p>
+      <p>Mi Extended Warranty</p>
+      <p>Mi Complete Protect</p>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <p style="color: white;"><b>Copyright © 2010 - 2024 Xiaomi. All Rights Reserved</b>
+    <a class="sitemap" style="color: white;" href="">Sitemap </a></p>
+     
+</footer>
+</body>
+</html>

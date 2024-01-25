@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    align-items: center;
+}
+.nav-item{
+    display: flex;
+}
+.nav-item:hover{
+    color: orange;
+}
+
+.nav-link:hover{
+    color: orange;
+    cursor: pointer;
+}
+#link:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+.div{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    background-color:azure;
+}
+footer{
+    background-color: black;
+}
